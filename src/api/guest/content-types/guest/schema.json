@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guests",
+  "info": {
+    "singularName": "guest",
+    "pluralName": "guests",
+    "displayName": "Guest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "checked_in": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
