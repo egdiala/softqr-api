@@ -20,6 +20,10 @@
     "checked_in": {
       "type": "boolean",
       "default": false
+    },
+    "tent": {
+      "type": "text",
+      "required": true
     }
   }
 }

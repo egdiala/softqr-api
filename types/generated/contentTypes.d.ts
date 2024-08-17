@@ -376,6 +376,7 @@ export interface ApiGuestGuest extends Schema.CollectionType {
   attributes: {
     full_name: Attribute.String & Attribute.Required & Attribute.Unique;
     checked_in: Attribute.Boolean & Attribute.DefaultTo<false>;
+    tent: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

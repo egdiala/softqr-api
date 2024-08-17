@@ -1,13 +1,4 @@
-/**
- * guest controller
- */
-
-import { factories } from '@strapi/strapi'
-
-module.exports = factories.createCoreController("api::guest.guest", ({ strapi }) => ({
-    async bulkUpload() {
-        await strapi.db.query("api::guest.guest").createMany({
-            data: [
+[
   {
     "full_name": "Abiye Henderson Membe",
     "tent": "Not yet allocated"
@@ -836,16 +827,4 @@ module.exports = factories.createCoreController("api::guest.guest", ({ strapi })
     "full_name": "Yultide Ifode",
     "tent": "ROMFORD"
   }
-],
-        });
-    },
-
-    async bulkPublish() {
-        await strapi.db.query("api::guest.guest").updateMany({
-            data: {
-                publishedAt: new Date().toISOString(),
-            },
-
-        });
-    }
-}));
+]
